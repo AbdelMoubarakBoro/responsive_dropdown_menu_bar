@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dropdown Menu</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <i class="ri-planet-line">Company</i> 
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Company</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Analytics</a>
+          <ul class="dropdown-content">
+            <li><a href="#">overview</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li class="report">
+                <a href="#" class="reports">Reports</a>
+                <i class="ri-planet-line"></i>
+                <ul class="reports-content">
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">Paiements</a></li>
+                    <li><a href="#">Refunds</a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">products</a></li>
+        <li class="user">
+          <a href="#" class="users">Users</a>
+          <ul class="users-content">
+            <li><a href="#">Profiles</a></li>
+            <li><a href="#">Accounts</a></li>
+            <li><a href="#">Messages</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span>&#9776;</span>
+      </div>
+    </nav>
+  </header>
+
+  <script src="main.js"></script>
+</body>
+</html>
